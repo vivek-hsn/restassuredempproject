@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [CloudManager]" parallel="tests">
+  <test thread-count="1" name="RestAssured Framework(failed)" parallel="tests">
+    <classes>
+      <class name="com.employeeapi.testcase.TC001_GetAllEmployees">
+        <methods>
+          <include name="getAllEmployees"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="checkContentLength"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcase.TC001_GetAllEmployees -->
+    </classes>
+  </test> <!-- RestAssured Framework(failed) -->
+</suite> <!-- Failed suite [CloudManager] -->

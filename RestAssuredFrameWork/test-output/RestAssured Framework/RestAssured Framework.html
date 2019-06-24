@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  RestAssured Framework</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RestAssured Framework</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 24 19:08:57 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>26 seconds (26120 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.employeeapi.testcase.TC003_CreateAnEmployee.chcekStatusLine()'><b>chcekStatusLine</b><br>Test class: com.employeeapi.testcase.TC003_CreateAnEmployee</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC003_CreateAnEmployee@5c3bd550</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC004_UpdateEmpDetails.checUpdateDetails()'><b>checUpdateDetails</b><br>Test class: com.employeeapi.testcase.TC004_UpdateEmpDetails</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC004_UpdateEmpDetails@91161c7</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC001_GetAllEmployees.checkContentEncoding()'><b>checkContentEncoding</b><br>Test class: com.employeeapi.testcase.TC001_GetAllEmployees</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC001_GetAllEmployees@1bce4f0a</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC003_CreateAnEmployee.checkContentEncoding()'><b>checkContentEncoding</b><br>Test class: com.employeeapi.testcase.TC003_CreateAnEmployee</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC003_CreateAnEmployee@5c3bd550</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC001_GetAllEmployees.checkContentLength()'><b>checkContentLength</b><br>Test class: com.employeeapi.testcase.TC001_GetAllEmployees</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC001_GetAllEmployees@1bce4f0a</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC001_GetAllEmployees.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testcase.TC001_GetAllEmployees</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC001_GetAllEmployees@1bce4f0a</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC003_CreateAnEmployee.checkContentType()'><b>checkContentType</b><br>Test class: com.employeeapi.testcase.TC003_CreateAnEmployee</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC003_CreateAnEmployee@5c3bd550</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC002_SearchForEmp.checkCookies()'><b>checkCookies</b><br>Test class: com.employeeapi.testcase.TC002_SearchForEmp</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC002_SearchForEmp@5e3a8624</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC005_DeleteAnEmployee.checkEmpExistsAfterDelete()'><b>checkEmpExistsAfterDelete</b><br>Test class: com.employeeapi.testcase.TC005_DeleteAnEmployee</td>
+<td></td>
+<td>1</td>
+<td>com.employeeapi.testcase.TC005_DeleteAnEmployee@604ed9f0</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC002_SearchForEmp.checkEmployeeDetails()'><b>checkEmployeeDetails</b><br>Test class: com.employeeapi.testcase.TC002_SearchForEmp</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC002_SearchForEmp@5e3a8624</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC005_DeleteAnEmployee.checkReponseMessage()'><b>checkReponseMessage</b><br>Test class: com.employeeapi.testcase.TC005_DeleteAnEmployee</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC005_DeleteAnEmployee@604ed9f0</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC003_CreateAnEmployee.checkResponse()'><b>checkResponse</b><br>Test class: com.employeeapi.testcase.TC003_CreateAnEmployee</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC003_CreateAnEmployee@5c3bd550</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC001_GetAllEmployees.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.employeeapi.testcase.TC001_GetAllEmployees</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC001_GetAllEmployees@1bce4f0a</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC001_GetAllEmployees.checkResponseTime()'><b>checkResponseTime</b><br>Test class: com.employeeapi.testcase.TC001_GetAllEmployees</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC001_GetAllEmployees@1bce4f0a</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC002_SearchForEmp.checkServer()'><b>checkServer</b><br>Test class: com.employeeapi.testcase.TC002_SearchForEmp</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC002_SearchForEmp@5e3a8624</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC003_CreateAnEmployee.checkServerType()'><b>checkServerType</b><br>Test class: com.employeeapi.testcase.TC003_CreateAnEmployee</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC003_CreateAnEmployee@5c3bd550</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC001_GetAllEmployees.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testcase.TC001_GetAllEmployees</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC001_GetAllEmployees@1bce4f0a</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC002_SearchForEmp.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testcase.TC002_SearchForEmp</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC002_SearchForEmp@5e3a8624</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC003_CreateAnEmployee.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testcase.TC003_CreateAnEmployee</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC003_CreateAnEmployee@5c3bd550</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC004_UpdateEmpDetails.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.employeeapi.testcase.TC004_UpdateEmpDetails</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC004_UpdateEmpDetails@91161c7</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC001_GetAllEmployees.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.employeeapi.testcase.TC001_GetAllEmployees</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC001_GetAllEmployees@1bce4f0a</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC002_SearchForEmp.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.employeeapi.testcase.TC002_SearchForEmp</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC002_SearchForEmp@5e3a8624</td></tr>
+<tr>
+<td title='com.employeeapi.testcase.TC004_UpdateEmpDetails.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.employeeapi.testcase.TC004_UpdateEmpDetails</td>
+<td></td>
+<td>0</td>
+<td>com.employeeapi.testcase.TC004_UpdateEmpDetails@91161c7</td></tr>
+</table><p>
+</body>
+</html>

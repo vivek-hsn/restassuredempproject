@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RestAssured Framework" parallel="tests" thread-count="5">
+	<listeners>
+		<listener class-name="com.employeeapi.utilities.Listeners" />
+	</listeners>
+	<test thread-count="5" name="RestAssured Framework">
+		<classes>
+			<class name="com.employeeapi.testcase.TC001_GetAllEmployees" />
+			<class name="com.employeeapi.testcase.TC002_SearchForEmp" />
+			<class name="com.employeeapi.testcase.TC003_CreateAnEmployee" />
+			<class name="com.employeeapi.testcase.TC004_UpdateEmpDetails" />
+			<class name="com.employeeapi.testcase.TC005_DeleteAnEmployee" />
+		</classes>
+	</test>
+</suite>

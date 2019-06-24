@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RestAssured Framework]" parallel="tests">
+  <listeners>
+    <listener class-name="com.employeeapi.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="RestAssured Framework(failed)" parallel="tests">
+    <classes>
+      <class name="com.employeeapi.testcase.TC005_DeleteAnEmployee">
+        <methods>
+          <include name="deleteEmployee"/>
+          <include name="checkReponseMessage"/>
+          <include name="checkEmpExistsAfterDelete"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcase.TC005_DeleteAnEmployee -->
+      <class name="com.employeeapi.testcase.TC004_UpdateEmpDetails">
+        <methods>
+          <include name="checkStatusCode"/>
+          <include name="checUpdateDetails"/>
+          <include name="setup"/>
+          <include name="updateEmpDetails"/>
+          <include name="teardown"/>
+          <include name="checkStatusLine"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcase.TC004_UpdateEmpDetails -->
+      <class name="com.employeeapi.testcase.TC002_SearchForEmp">
+        <methods>
+          <include name="searchForEmp"/>
+          <include name="teardown"/>
+          <include name="checkEmployeeDetails"/>
+          <include name="checkStatusCode"/>
+          <include name="checkCookies"/>
+          <include name="checkStatusLine"/>
+          <include name="setup"/>
+          <include name="checkServer"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcase.TC002_SearchForEmp -->
+      <class name="com.employeeapi.testcase.TC003_CreateAnEmployee">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="teardown"/>
+          <include name="chcekStatusLine"/>
+          <include name="checkResponse"/>
+          <include name="createEmployee"/>
+          <include name="checkContentEncoding"/>
+          <include name="checkServerType"/>
+          <include name="setup"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcase.TC003_CreateAnEmployee -->
+      <class name="com.employeeapi.testcase.TC001_GetAllEmployees">
+        <methods>
+          <include name="getAllEmployees"/>
+          <include name="checkContentType"/>
+          <include name="teardown"/>
+          <include name="checkStatusLine"/>
+          <include name="checkContentEncoding"/>
+          <include name="checkStatusCode"/>
+          <include name="setup"/>
+          <include name="checkResponseTime"/>
+          <include name="checkResponseBody"/>
+          <include name="checkContentLength"/>
+        </methods>
+      </class> <!-- com.employeeapi.testcase.TC001_GetAllEmployees -->
+    </classes>
+  </test> <!-- RestAssured Framework(failed) -->
+</suite> <!-- Failed suite [RestAssured Framework] -->
